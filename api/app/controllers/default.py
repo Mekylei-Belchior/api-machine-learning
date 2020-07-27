@@ -6,7 +6,7 @@ from app import app
 
 
 # Load pickle file model
-with open('C:/Users/mekyl/Documents/GitHub/API-MachineLearning/model/model.pkl', 'rb') as file:
+with open('https://github.com/Mekylei-Belchior/API-MachineLearning/blob/master/model/model.pkl', 'rb') as file:
 	model = load(file)
 
 
