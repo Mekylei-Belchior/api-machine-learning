@@ -1,12 +1,12 @@
-import pandas as pd
-import pickle
-
+from pandas import DataFrame
 from sklearn.datasets import load_iris
 
 from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import BaggingClassifier
 from sklearn.metrics import accuracy_score
+
+from pickle import dump
 
 
 # Dataset loading
@@ -45,4 +45,4 @@ score = accuracy_score(y_test, pred)
 
 # Saving trained model
 with open('model.pkl', 'wb') as file:
-	pickle.dump(model, file)
+	dump(model, file)
