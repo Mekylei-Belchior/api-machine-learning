@@ -6,7 +6,7 @@ from app import app
 
 
 # Load pickle file model
-with open('https://github.com/Mekylei-Belchior/API-MachineLearning/blob/master/model/model.pkl', 'rb') as file:
+with open('C:/Users/mekyl/Documents/GitHub/API-MachineLearning/model/model.pkl', 'rb') as file:
 	model = load(file)
 
 
@@ -24,7 +24,6 @@ def api_predict():
 	# Prediction
 	pred = model.predict(df)
 
-	df['Prediction'] = pred
+	df['prediction'] = pred
 
 	return df.to_json( orient='records')
-
