@@ -37,7 +37,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="C:\Users\mekyl\Documents\GitHub\API-MachineLearning\venv"
+VIRTUAL_ENV="C:\Users\mekyl\Documents\GitHub\api-machine-learning\venv"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
