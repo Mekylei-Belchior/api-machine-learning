@@ -1,18 +1,16 @@
 from pandas import DataFrame
-from sklearn.datasets import load_iris
+from pickle import dump
 
 from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import BaggingClassifier
 from sklearn.metrics import accuracy_score
+from sklearn.datasets import load_iris
 
-from pickle import dump
 
 
 # Dataset loading
 iris = load_iris() 
-
-target_names = {0: 'setosa', 1: 'versicolor', 2: 'virginica'}
 
 df = pd.DataFrame(iris.data, columns=iris.feature_names)
 df['target'] = iris.target
