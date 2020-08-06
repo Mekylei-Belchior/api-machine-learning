@@ -1,1 +1,2 @@
+""" Flask Config. """
 DEBUG = True
